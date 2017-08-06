@@ -1,0 +1,9 @@
+{-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE TemplateHaskell #-}
+
+module Gmail.TH.Instances where
+
+import Gmail.Types
+import Gmail.TH
+
+$(scratch ''MailRequest)

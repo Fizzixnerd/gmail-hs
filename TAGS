@@ -1,0 +1,153 @@
+
+./Setup.hs,15
+main main1,2
+
+./src/Gmail/Api/Api.hs,32
+module Gmail.Api Gmail.Api0,1
+
+./src/Gmail/Api/List.hs,85
+module Gmail.Api.List Gmail.Api.List2,3
+getMail getMail8,9
+getMail getMail9,10
+
+./src/Gmail/Auth.hs,746
+module Gmail.Auth Gmail.Auth2,3
+oAuth2InfoToOAuth2Client oAuth2InfoToOAuth2Client19,20
+oAuth2InfoToOAuth2Client oAuth2InfoToOAuth2Client20,21
+getOAuth2Client getOAuth2Client25,26
+getOAuth2Client getOAuth2Client26,27
+defaultDataDir defaultDataDir33,34
+defaultDataDir defaultDataDir34,35
+defaultTokenFilePath defaultTokenFilePath36,37
+defaultTokenFilePath defaultTokenFilePath37,38
+defaultOAuth2JsonPath defaultOAuth2JsonPath41,42
+defaultOAuth2JsonPath defaultOAuth2JsonPath42,43
+defaultOAuth2Client defaultOAuth2Client46,47
+defaultOAuth2Client defaultOAuth2Client47,48
+defaultManager defaultManager51,52
+defaultManager defaultManager52,53
+defaultGetToken defaultGetToken54,55
+defaultGetToken defaultGetToken55,56
+
+./src/Gmail/TH/Instances.hs,50
+module Gmail.TH.Instances Gmail.TH.Instances3,4
+
+./src/Gmail/TH.hs,653
+module Gmail.TH Gmail.TH3,4
+class UrlEncode UrlEncode12,13
+class UrlEncode UrlEncode12,13
+  toUrlArguments toUrlArguments13,14
+class UrlShow UrlShow15,16
+class UrlShow UrlShow15,16
+  urlShow urlShow16,17
+instance instance18,19
+getUrlArgumentsNames getUrlArgumentsNames40,41
+getUrlArgumentsNames getUrlArgumentsNames41,42
+getTypeConDec getTypeConDec45,46
+getTypeConDec getTypeConDec46,47
+getTypeName getTypeName52,53
+getTypeName getTypeName53,54
+getInstanceFunctionsQ getInstanceFunctionsQ56,57
+getInstanceFunctionsQ getInstanceFunctionsQ57,58
+deriveUrlEncode deriveUrlEncode62,63
+deriveUrlEncode deriveUrlEncode63,64
+
+./src/Gmail/Types.hs,2658
+module Gmail.Types Gmail.Types3,4
+data GmailError GmailError10,11
+data GmailError = GmailError GmailError10,11
+data GmailError = GmailError { gmailError gmailError10,11
+data GmailErrors GmailErrors12,13
+data GmailErrors = GmailErrors GmailErrors12,13
+data GmailErrors = GmailErrors { gmailErrors gmailErrors12,13
+                               , gmailCode gmailCode13,14
+                               , gmailMessage gmailMessage14,15
+data GoogleError GoogleError17,18
+data GoogleError = GoogleError GoogleError17,18
+data GoogleError = GoogleError { googleDomain googleDomain17,18
+                               , googleReason googleReason18,19
+                               , googleMessage googleMessage19,20
+                               , googleLocation googleLocation20,21
+                               , googleLocationType googleLocationType21,22
+data OAuth2Installation OAuth2Installation24,25
+data OAuth2Installation = OAuth2Installation OAuth2Installation24,25
+data OAuth2Installation = OAuth2Installation { oauth2installed oauth2installed24,25
+data OAuth2Info OAuth2Info26,27
+data OAuth2Info = OAuth2Info OAuth2Info26,27
+data OAuth2Info = OAuth2Info { oauth2Client_Id oauth2Client_Id26,27
+                             , oauth2Auth_Uri oauth2Auth_Uri27,28
+                             , oauth2Token_Uri oauth2Token_Uri28,29
+                             , oauth2Auth_Provider_x509_Cert_Url oauth2Auth_Provider_x509_Cert_Url29,30
+                             , oauth2Client_Secret oauth2Client_Secret30,31
+                             , oauth2Redirect_Uris oauth2Redirect_Uris31,32
+data OAuth2Tokens OAuth2Tokens34,35
+data OAuth2Tokens = OAuth2Tokens OAuth2Tokens34,35
+data OAuth2Tokens = OAuth2Tokens { oauth2Access_Token oauth2Access_Token34,35
+                                 , oauth2Refresh_Token oauth2Refresh_Token35,36
+$($38,39
+type AccessToken AccessToken45,46
+type TimeStamp TimeStamp47,48
+type MailAddress MailAddress48,49
+data Mail Mail49,50
+data Mail = Mail Mail49,50
+data Mail = Mail { mailTo mailTo49,50
+                 , mailFrom mailFrom50,51
+                 , mailTime mailTime51,52
+                 , mailBody mailBody52,53
+data MailRequest MailRequest55,56
+data MailRequest = MailRequest MailRequest55,56
+data MailRequest = MailRequest { includeSpamTrash includeSpamTrash55,56
+                               , labelIds labelIds56,57
+                               , maxResults maxResults57,58
+                               , pageToken pageToken58,59
+                               , q q59,60
+type UrlArguments UrlArguments62,63
+
+./src/Gmail/Api.hs,314
+module Gmail.Api Gmail.Api3,4
+defaultGetMailRequest defaultGetMailRequest10,11
+defaultGetMailRequest defaultGetMailRequest11,12
+newMailQuery newMailQuery18,19
+newMailQuery newMailQuery19,20
+defaultGetNewMailRequest defaultGetNewMailRequest21,22
+defaultGetNewMailRequest defaultGetNewMailRequest22,23
+
+./src/Gmail.hs,24
+module Gmail Gmail2,3
+
+./src/Main.hs,52
+module Main Main2,3
+main main6,7
+main main7,8
+
+./.cabal-sandbox/share/x86_64-linux-ghc-7.10.2/socks-0.5.4/Example.hs,17
+main main12,13
+
+./dist/build/autogen/Paths_gmail.hs,960
+module Paths_gmail Paths_gmail0,1
+catchIO catchIO11,12
+catchIO catchIO12,13
+version version14,15
+version version15,16
+bindir, libdir, datadir, libexecdir, sysconfdir sysconfdir16,17
+bindir, libdir, datadir, libexecdir,libexecdir16,17
+bindir, libdir, datadir,datadir16,17
+bindir, libdir,libdir16,17
+bindir,bindir16,17
+bindir bindir18,19
+libdir libdir19,20
+datadir datadir20,21
+libexecdir libexecdir21,22
+sysconfdir sysconfdir22,23
+getBinDir, getLibDir, getDataDir, getLibexecDir, getSysconfDir getSysconfDir24,25
+getBinDir, getLibDir, getDataDir, getLibexecDir,getLibexecDir24,25
+getBinDir, getLibDir, getDataDir,getDataDir24,25
+getBinDir, getLibDir,getLibDir24,25
+getBinDir,getBinDir24,25
+getBinDir getBinDir25,26
+getLibDir getLibDir26,27
+getDataDir getDataDir27,28
+getLibexecDir getLibexecDir28,29
+getSysconfDir getSysconfDir29,30
+getDataFileName getDataFileName31,32
+getDataFileName getDataFileName32,33

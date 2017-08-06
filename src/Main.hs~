@@ -1,0 +1,8 @@
+{-# LANGUAGE OverloadedStrings #-}
+
+module Main where
+
+import Gmail.Auth
+
+main :: IO ()
+main = defaultGetTokens

@@ -1,0 +1,21 @@
+{-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE TemplateHaskell #-}
+
+module Gmail.Api where
+
+import Gmail.Types
+
+--FIXME: This shouldnt' be hard coded!
+defaultGetMailRequest :: IO MailRequest
+defaultGetMailRequest = return MailRequest { includeSpamTrash = False
+                                        , labelIds = []
+                                        , maxResults = 10 
+                                        , pageToken = ""
+                                        , q = ""
+                                        }
+
+newMailQuery :: String
+newMailQuery = "rfc822msgid:is:unread"
+
+defaultGetNewMailRequest :: IO MailRequest
+defaultGetNewMailRequest = fmap (\req -> req {q = newMailQuery}) defaultGetMailRequest
